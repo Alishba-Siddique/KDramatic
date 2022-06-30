@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #EEEEEE;
+}
+
+#content {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 80%;
+    max-width: 978px;
+}
+
+
+.no-js h1 {
+    color: #222222;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 3.125em;
+    background-color: rgb(10, 52, 120);
+}
+ 
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 3.125em;
+    height: 100%;
+    color: rgb(224, 224, 223);
+    font-family: 'Sen', sans-serif;
+
+}
+.navbar-container li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(224, 224, 223);
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 1.125em;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 0.9375em;
+}
+
+.profile-picture{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle{
+    width: 2.5em;
+    height: 1.25em;
+    background-color: rgb(236, 236, 71);
+    border-radius: 1.875em;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    height: 1.1875em;
+    width: 1.125em;
+    background-color: rgb(10, 52, 120);
+    position: absolute;
+    right: 0.075em;
+    border-radius: 50%;
+    bottom: 0;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.logo-container{
+    flex: 1.5;
+}
+.logo-container a{
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 1.875em;
+    color: rgb(236, 236, 71);
+}   
+
+.sidebar{
+        width: 3.125em;
+        height: 100%;
+        background-color: rgb(10, 52, 120);  
+        position: fixed;
+        top: 0; 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 60px;
+}
+
+.left-menu-icon{
+    color: rgb(236, 236, 71);
+    font-size: 1.25em;
+    margin-bottom: 2.5em;
+    margin-top: 0.3125em;
+}
+
+.container{
+    background-color: rgb(8, 43, 99);
+    min-height: calc(180vh);
+    color: rgb(224, 224, 223);
+}
+
+.content-container{
+    margin-left: 3.125em;
+}
+
+.featured-content{
+    height: 50vh;
+    padding: 3.125em; 
+    margin-bottom: 2em;
+}
+
+.featured-tile{
+    margin-left: 54em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    width: 22em;
+}
+
+.featured-description {
+    margin-top: 0em;
+    padding-top: 0;
+    padding-left: 2em;
+    width: 31.25em;
+    color: rgb(255, 255, 235);
+}
+
+.featured-button{
+    margin-top: 1.1em;
+    margin-left: 2em;
+    background-color: rgb(236, 236, 71);
+    color: rgb(7, 52, 126);
+    padding: 0.63em 1.25em;
+    border-radius: 0.63em;
+    border: none;
+    outline: none;
+    font-weight: bold; 
+}
+
+.kdrama-list-container{
+    padding: 0 3em;
+}
+
+.kdrama-list-wrapper{
+    position: relative;
+    width: 186vh;
+    overflow: hidden;
+}
+
+.kdrama-list{
+    display: flex;
+    align-items: center;
+    height: 18.75em;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.kdrama-list-item{
+    margin-right: 3.09em;
+    position: relative;
+}
+
+.kdrama-list-item:hover .kdrama-list-item-img{
+    transform: scale(1.2);
+    margin: 0em 1.875em;
+    opacity: 0.5;
+}
+
+.kdrama-list-item:hover .kdrama-list-item-title,
+.kdrama-list-item:hover .kdrama-list-item-description,
+.kdrama-list-item:hover .kdrama-list-item-button{
+    opacity: 1;
+}
+
+.kdrama-list-item-img{
+    transition: all 1s ease-in-out;
+    border-radius: .4em;
+    width: 14.8em;
+    height: 14.5em;
+    object-fit: cover;
+}
+
+.kdrama-list-item-title{
+    background-color: rgb(23, 18, 97);
+    color: rgb(226, 226, 226);
+    padding: 0 0.225em;
+    font-size: 1.3em;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 2em;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+
+}
+
+.kdrama-list-item-description{
+    background-color: rgba(22, 16, 112, 0.979);
+    color: rgb(226, 226, 226);
+    padding: 0.1em;
+    font-size: 1em;
+    position: absolute;
+    top: 25%;
+    left: 2.4em;
+    opacity: 0.7em;
+    width: 15.15em;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.kdrama-list-item-button{
+    padding: 0.625em;
+    color: rgb(0, 36, 95);
+    background-color: rgb(236, 236, 71);
+    border-radius: 0.63em;
+    position: absolute;
+    border: none;
+    outline: none;
+    font-weight: bold; 
+    cursor: pointer;
+    bottom: 0.5em;
+    left: 3em;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.arrow{
+    font-size: 7.5rem;
+    color: rgb(235, 229, 229);
+    position: absolute;
+    top: 0.7em;
+    left: 9.1em;
+    opacity: .9;
+    cursor: pointer;
+    text-shadow: -1px 0 rgb(235, 229, 229), 0 1px rgb(235, 229, 229), 1px 0 rgb(235, 229, 229), 0 -1px ;
+}
+
+.featured-tittle{
+    margin-left: 30em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    width: 40em;
+}
+
+.container.active{
+    background-color: rgb(252, 252, 252);
+}
+
+.kdrama-list-title.active{
+    color: rgb(12, 12, 88);
+}
+
+.navbar-container.active{
+    background-color: rgb(252, 252, 252);
+    color: rgb(6, 6, 107);
+}
+
+
+.logo.active{
+    color: rgb(236, 236, 71);
+    text-shadow: -1.3px 0 rgb(12, 12, 88), 0 1.3px rgb(12, 12, 88), 1.3px 0 rgb(12, 12, 88), 0 -1.3px rgb(12, 12, 88);
+}
+
+.sidebar.active{
+    background-color: rgb(252, 252, 252);
+}
+
+.left-menu-icon.active{
+    color: rgb(12, 12, 88);
+}
+
+.menu-list-item.active{
+    color: rgb(12, 12, 88);
+}
+
+
+
+.toggle.active{
+    background-color: rgb(12, 12, 88);
+}
+
+.toggle-ball.active{
+    background-color: rgb(236, 236, 71);
+    transform: translateX(-1.25em);
+}
+
+.arrow.active{
+    color: rgb(12, 12, 88);
+    text-shadow: -1px 0 rgb(235, 229, 229), 0 1px rgb(235, 229, 229), 1px 0 rgb(235, 229, 229), 0 -1px ;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .menu-container{
+        display: none;
+    }
+}
